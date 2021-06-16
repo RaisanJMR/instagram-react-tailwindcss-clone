@@ -2,18 +2,17 @@ import Firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
-// import { seedDatabase } from '../seed';
-
 const config = {
-  apiKey: 'AIzaSyAZq3okr1bVZatawy0RcBdu_feBkXaINwE',
-  authDomain: 'instagram-react-tailwindcss.firebaseapp.com',
-  projectId: 'instagram-react-tailwindcss',
-  storageBucket: 'instagram-react-tailwindcss.appspot.com',
-  messagingSenderId: '662270598524',
-  appId: '1:662270598524:web:e19d30a8cff15ce91618f9',
+  apiKey: "AIzaSyA83pvlDB33IM8D52zKPwIB_JIcIssXFoM",
+  authDomain: "instagram-clone-react-tailwind.firebaseapp.com",
+  projectId: "instagram-clone-react-tailwind",
+  storageBucket: "instagram-clone-react-tailwind.appspot.com",
+  messagingSenderId: "426482873307",
+  appId: "1:426482873307:web:2ebfab3107bcbc08e4adfe",
+  measurementId: "G-F80YG7W2XQ"
 };
+
 const firebase = Firebase.initializeApp(config);
-// console.log(firebase);
 const { FieldValue } = Firebase.firestore;
-// seedDatabase(firebase);
+
 export { firebase, FieldValue };
